@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Aca intente quitar los margenes que quedaban en mobile y tablet, encontre esto que funciono solo para tablet*/
+
+
+/*Estilos generales*/
+
+.bg-general{
+    background-color: #6da644; 
+}
+
+h1{
+  text-align:center; 
+  margin-top: 0.5rem;
+  color: #6da644;
+}
+
+h2{
+   color: white;
+   text-align: center;
+   margin-top: 3%;
+}
+/*Estilos header - menu */
+
+.logo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 2rem;
+}
+.toursBrindados{
+    font-size: 2.5rem;
+    margin: 1rem auto;
+    text-align: center;
+    color: black
+}
+
+
+#seccion1{
+  background-color: whitesmoke;
+}
+/*Carousel */
+.carousel-item p{
+  font-size: 1.5rem;
+  color: black;
+}
+
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+/*Card*/
+
+.heightBSImgCard{
+    height: 300px;
+}
+
+/*Banner*/
+.mayoristas {
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.8)), url("assets/ChicaconriñoneraNegra.jpg") center center;
+    background-size: cover;
+    padding: 60px 0;
+  }
+  
+  .mayoristas h5 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  
+  .mayoristas .mayoristas-btn {
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .mayoristas .mayoristas-btn:hover {
+    background: #6da644;
+    border: 2px solid black;
+  }
+  
+  @media (min-width: 1024px) {
+    .cta {
+      background-attachment: fixed;
+    }
+  }
+
+/*Footer*/
+
+#footer{
+    background-color: whitesmoke;
+}
+#footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #fff;
+  }
+
+  #footer .creditos {
+    padding-top: 5px;
+    font-size: 13px;
+    color: #6da644;
+}
+
+footer img{
+    width: 80px;
+    height: 80px;
+    margin-right: 2rem;
+    border-radius: 50%;
+}
+
+.centrar{
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+    margin-left: 40px;
+  }
+
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #footer .footer-top .footer-links ul li{
+    margin-top: 1rem;
+    padding-right: 2px;
+    font-size: 16px;
+  }
+
+  #footer .footer-top .footer-links ul li a{
+    text-decoration: none;
+    color: #6da644;
+  }
+
+/* social links*/
+.social-links {
+    margin: 0 30px 10px 0;
+  }
+  
+  .social-links a {
+    color: rgba(73, 60, 62, 0.5);
+    margin-top: 20px;
+  }
+  
+@media screen and (min-width: 576px){
+    .contenedorFooter{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);  
+    }
+    .itemFooter{
+        border-right: 1px solid white;
+        padding: 0.75rem;
+    }
+    .itemFooter:last-of-type{
+        border-right: none;
+        
+    }
+
+}
+
+
+/* GRID*/
+@media only screen and (min-width:320px){
+  
+  main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 50%  ;
+    grid-template-rows: 150px 150px 150px 150px;
+    margin-left: 20%;
+    margin-top: 3rem;
+  
+  }
+  
+  
+  
+  main div i{
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (min-width:760px){
+  main {
+display: grid;
+grid-gap: 1rem;
+grid-template-columns: 50% 50% ;
+grid-template-rows: 150px 150px;
+margin-top: 3rem;
+}
+
+
+
+
+}
+
+@media only screen and (min-width:1366px){
+  main {
+display: grid;
+grid-gap: 1rem;
+grid-template-columns: 300px 300px 300px 300px;
+grid-template-rows: 150px;
+align-items: center;
+justify-content: flex-end;
+}
+
+
+}
+
+
